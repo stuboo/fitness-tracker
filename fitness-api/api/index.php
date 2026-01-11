@@ -6,6 +6,11 @@ require_once __DIR__ . '/../lib/validator.php';
 // CORS headers are handled in .htaccess to prevent duplicates
 header('Content-Type: application/json; charset=utf-8');
 
+// Prevent caching to ensure fresh data
+header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
+header('Pragma: no-cache');
+header('Expires: 0');
+
 // Handle preflight OPTIONS request
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(200);

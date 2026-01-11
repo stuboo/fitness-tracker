@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Heatmap from '@/components/Heatmap';
 import { useEntries } from '@/hooks/useEntries';
 import { MetricType } from '@/lib/types';
-import { Calendar, Target, Weight, Footprints, Apple, Drumstick, Dumbbell, Flame } from 'lucide-react';
+import { Target, Weight, Footprints, Apple, Drumstick, Dumbbell, Flame } from 'lucide-react';
 
 const metricOptions = [
   { value: 'composite' as MetricType, label: 'Composite', icon: Target, color: 'var(--focus-indigo)' },
@@ -52,19 +52,6 @@ export default function HeatmapPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 pb-24">
       <div className="max-w-6xl mx-auto px-4 pt-8">
-        {/* Header */}
-        <div className="text-center mb-8 animate-fade-in">
-          <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-[var(--focus-indigo)] to-[var(--focus-violet)] mb-4 shadow-lg animate-float">
-            <Calendar className="w-7 h-7 text-white" strokeWidth={2.5} />
-          </div>
-          <h1 className="text-4xl font-bold gradient-text mb-2">
-            Activity Heatmap
-          </h1>
-          <p className="text-gray-600 text-base">
-            Your year at a glance
-          </p>
-        </div>
-
         {/* Stats Cards */}
         <div className="grid grid-cols-3 gap-4 mb-8 animate-slide-up">
           <div className="card-elevated text-center">

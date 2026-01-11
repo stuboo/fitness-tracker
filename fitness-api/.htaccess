@@ -3,11 +3,14 @@
     Header unset Access-Control-Allow-Origin
     Header unset Access-Control-Allow-Methods
     Header unset Access-Control-Allow-Headers
+    Header unset Access-Control-Max-Age
+    Header unset Access-Control-Allow-Credentials
 
-    # Set CORS headers
+    # Set CORS headers - Allow all origins
     Header always set Access-Control-Allow-Origin "*"
-    Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS"
-    Header always set Access-Control-Allow-Headers "Content-Type"
+    Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS, HEAD"
+    Header always set Access-Control-Allow-Headers "Content-Type, Accept, Origin, Authorization"
+    Header always set Access-Control-Max-Age "3600"
 </IfModule>
 
 <IfModule mod_rewrite.c>
