@@ -47,7 +47,5 @@ export function prepareEntryForSubmission(
     ...input,
     protein_percentage: proteinPercentage,
     composite_score: compositeScore,
-    id: '', // Set by backend
-    timestamp: '', // Set by backend
   };
 }

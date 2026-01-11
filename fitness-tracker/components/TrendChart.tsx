@@ -59,10 +59,10 @@ export default function TrendChart({ entries, metric }: TrendChartProps) {
               border: '1px solid #e5e7eb',
               borderRadius: '0.5rem',
             }}
-            formatter={(value: number) => [
-              formatValue(value, metric),
-              config.name,
-            ]}
+            formatter={(value: number | undefined) => {
+              if (value === undefined) return ['N/A', config.name];
+              return [formatValue(value, metric), config.name];
+            }}
           />
           {config.type === 'bar' ? (
             <Bar dataKey="value" fill={config.color} radius={[4, 4, 0, 0]} />
