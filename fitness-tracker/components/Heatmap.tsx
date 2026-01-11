@@ -146,10 +146,12 @@ export default function Heatmap({ entries, metric }: HeatmapProps) {
           domain: [0, 1],
         },
       },
-    }).then(() => {
-      console.log('[Heatmap] Cal-heatmap painted successfully');
+    });
 
-      // Debug: Check if colors are being applied
+    console.log('[Heatmap] Cal-heatmap painted successfully');
+
+    // Debug: Check if colors are being applied
+    setTimeout(() => {
       const cells = containerRef.current?.querySelectorAll('.ch-subdomain-bg');
       console.log('[Heatmap] Total cells rendered:', cells?.length);
 
@@ -163,9 +165,7 @@ export default function Heatmap({ entries, metric }: HeatmapProps) {
           console.log(`[Heatmap] Cell ${index} - fill: ${fillColor}, data-value: ${dataValue}`);
         });
       }
-    }).catch((error: Error) => {
-      console.error('[Heatmap] Cal-heatmap paint error:', error);
-    });
+    }, 100);
 
     return () => {
       if (calRef.current) {

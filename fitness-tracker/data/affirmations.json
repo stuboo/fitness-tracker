@@ -1,0 +1,107 @@
+{
+  "version": "1.0",
+  "created": "2026-01-11T00:00:00.000Z",
+  "last_updated": "2026-01-11T00:00:00.000Z",
+  "affirmations": [
+    {
+      "id": 1,
+      "text": "I'm proud of you. This is hard work and you're doing it anyway.",
+      "category": "encouragement"
+    },
+    {
+      "id": 2,
+      "text": "Every workout is progress, no matter how small it feels today.",
+      "category": "process"
+    },
+    {
+      "id": 3,
+      "text": "I am the type of person who shows up for his future self.",
+      "category": "identity"
+    },
+    {
+      "id": 4,
+      "text": "My body is capable of more than I give it credit for.",
+      "category": "self-compassion"
+    },
+    {
+      "id": 5,
+      "text": "I choose movement because I deserve to feel strong.",
+      "category": "self-compassion"
+    },
+    {
+      "id": 6,
+      "text": "Rest days are part of the journey, not a break from it.",
+      "category": "process"
+    },
+    {
+      "id": 7,
+      "text": "I am the type of person who keeps promises to my future self.",
+      "category": "identity"
+    },
+    {
+      "id": 8,
+      "text": "This discomfort is temporary, but the strength I'm building is lasting.",
+      "category": "process"
+    },
+    {
+      "id": 9,
+      "text": "I'm not starting over, I'm continuing forward.",
+      "category": "encouragement"
+    },
+    {
+      "id": 10,
+      "text": "I am the type of person who views food as fuel.",
+      "category": "identity"
+    },
+    {
+      "id": 11,
+      "text": "I'm building a life I don't need to escape from.",
+      "category": "encouragement"
+    },
+    {
+      "id": 12,
+      "text": "I am the type of person who trusts in the power of compounding. Small improvements each day lead to unimaginable wealth.",
+      "category": "identity"
+    },
+    {
+      "id": 13,
+      "text": "Progress isn't linear, and that's perfectly okay.",
+      "category": "process"
+    },
+    {
+      "id": 14,
+      "text": "I'm learning to love the process, not just the outcome.",
+      "category": "process"
+    },
+    {
+      "id": 15,
+      "text": "I am the type of person who chooses long-term health over short-term comfort.",
+      "category": "identity"
+    },
+    {
+      "id": 16,
+      "text": "Every healthy choice I make is an investment in his future self.",
+      "category": "process"
+    },
+    {
+      "id": 17,
+      "text": "I am the type of person who doesn't take a break on hard days.",
+      "category": "identity"
+    },
+    {
+      "id": 18,
+      "text": "My consistency matters more than my intensity.",
+      "category": "process"
+    },
+    {
+      "id": 19,
+      "text": "I'm grateful for what my body can do right now, today.",
+      "category": "self-compassion"
+    },
+    {
+      "id": 20,
+      "text": "I avoid those things that are inconsistent with my stated goals.",
+      "category": "identity"
+    }
+  ]
+}
