@@ -1,3 +1,15 @@
+<IfModule mod_headers.c>
+    # Remove any existing CORS headers to prevent duplicates
+    Header unset Access-Control-Allow-Origin
+    Header unset Access-Control-Allow-Methods
+    Header unset Access-Control-Allow-Headers
+
+    # Set CORS headers
+    Header always set Access-Control-Allow-Origin "*"
+    Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header always set Access-Control-Allow-Headers "Content-Type"
+</IfModule>
+
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule ^api/entries$ api/index.php [L]

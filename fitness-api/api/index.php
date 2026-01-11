@@ -3,10 +3,7 @@
 require_once __DIR__ . '/../lib/file-handler.php';
 require_once __DIR__ . '/../lib/validator.php';
 
-// CORS headers - update with specific Vercel domain in production
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
-header('Access-Control-Allow-Headers: Content-Type');
+// CORS headers are handled in .htaccess to prevent duplicates
 header('Content-Type: application/json; charset=utf-8');
 
 // Handle preflight OPTIONS request
